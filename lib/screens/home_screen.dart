@@ -11,7 +11,8 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin {
+class _HomeScreenState extends State<HomeScreen>
+    with SingleTickerProviderStateMixin {
   late AnimationController controller;
   late Animation<double> fadeTextAnimation;
 
@@ -42,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
-    List<int> items = List.generate(13, (item) => item);
+    List<int> items = List.generate(6, (item) => item);
     return Scaffold(
       body: Transform.rotate(
         angle: 0.5 * pi,
